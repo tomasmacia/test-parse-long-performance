@@ -35,7 +35,7 @@ public class Main {
     }
 
     public static double randomGenerator() {
-        return random.nextDouble() * (0.5);
+        return random.nextDouble();
     }
 
     public static String randomAlphaNumeric() {
@@ -54,6 +54,8 @@ public class Main {
         for (int n : Arrays.asList(1000, 1000000, 100000000)) {
             int i;
             long l;
+
+            resetRandom();
 
             System.out.println("Testing " + n + " iterations:");
 
